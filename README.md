@@ -4,6 +4,6 @@ These are my frontend implementation/solution for the design challenges of [Fron
 
 | Level  | Design Challenge          | Live Link |
 |--------|---------------------------|-----------|
-| Newbie | Four Card Feature Section |           |
+| Newbie | Four Card Feature Section |Link here  |
 |        |                           |           |
 |        |                           |           |
