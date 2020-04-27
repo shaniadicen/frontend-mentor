@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+
+.header {
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header p {
+  font-size: 15px;
+}
+
+h1 {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.6em;
+  font-weight: 200;
+}
+
+h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+h3 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+.header-contents {
+  color: hsl(229, 6%, 66%);
+  margin-top: 18px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.container p {
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  width: 350px;
+}
+
+.card::after {
+  content: '';
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card.red::after {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.card.cyan::after {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.card.orange::after {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.card.blue::after {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.card.push {
+  transform: translateY(50%);
+}
+
+.card img {
+  display: block;
+  height: 65px;
+  margin-left: auto;
+  width: 65px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Phones */
+@media only screen and (max-width: 775px) {
+  .card.push {
+    transform: translateY(0);
+  }
+}
