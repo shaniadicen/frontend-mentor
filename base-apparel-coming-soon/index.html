@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/master.css">
 </head>
+
 <body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="container">
+    <div class="left-container">
+      <div class="inner-container">
+        <img src="/images/logo.svg" class="logo" alt="base apparel logo">
+        <img src="/images/hero-mobile.jpg" alt="hero mobile image" class="hero-mobile">
+        <h1>
+          <span>We're</span>
+          coming soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form action="#" onsubmit="return validateForm();" name="base-form" id="base-form">
+          <input type="email" placeholder="Email Address" id="email">
+          <img src="/images/icon-error.svg" alt="error email" class="error-icon">
+          <button type="submit">
+            <img src="/images/icon-arrow.svg" alt="arrow">
+          </button>
+          <small>Please provide a valid email</small>
+        </form>
+      </div>
+    </div>
+    <div class="right-container bg-image"></div>
+  </div>
+  <script src="scripts/form.js"></script>
 </body>
+
 </html>
