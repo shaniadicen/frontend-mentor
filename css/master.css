@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  ;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #39392b;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.title-box {
+  background-image: linear-gradient(to right, #FFDA43 100%, #fff 0);
+  background-position: 0 65%;
+  background-repeat: repeat-x;
+  background-size: 100% 40%;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  z-index: 1;
+  white-space: nowrap;
+  margin: 20px auto;
+}
+
+h2 {
+  display: block;
+  position: relative;
+  margin: 50px;
+}
+
+h2::after {
+  content: '';
+  background-color: #FFDA43;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 8px;
+  width: 100px;
+  z-index: -1;
+}
+
+.cards {
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+  grid-gap: 4rem;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.card {
+  height: 350px;
+  width: 100%;
+}
+
+.button-github {
+  color: #39392b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #f4f4f4;
+  padding: 6px;
+  border: 4px solid #494949;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  margin: 20px;
+}
+
+.button-github:hover {
+  color: #39392b;
+  background: #FFDA43;
+  border-color: #FFDA43;
+  transition: all 0.4s ease 0s;
+}
+
+.button-live {
+  color: #39392b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #f4f4f4;
+  padding: 6px;
+  border: 3px dashed #FFDA43;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  margin: 20px;
+}
+
+.button-live:hover {
+  color: #FFDA43;
+  background: #39392b;
+  border-color: #39392b;
+  transition: all 0.4s ease 0s;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+}
+
+footer {
+  bottom: 0;
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 15px;
+    margin: 25px;
+  }
+
+  h2::after {
+    content: '';
+    background-color: #FFDA43;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 5px;
+    width: 65px;
+    z-index: -1;
+  }
+
+  .cards {
+    padding: 20px;
+  }
+}
